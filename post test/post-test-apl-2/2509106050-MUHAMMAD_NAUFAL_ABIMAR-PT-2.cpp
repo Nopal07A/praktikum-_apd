@@ -102,7 +102,7 @@ int hapusHero(){
 int main(){
 
     if(login()==false){
-        cout<<"Program berhenti karena gagal login 3 kali"<<endl;
+        cout<<"Kesempatan login habis"<<endl;
         return 0;
     }
 
