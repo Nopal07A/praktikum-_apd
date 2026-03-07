@@ -69,16 +69,16 @@ int lihatHero(){
 }
 
 int ubahHero(){
-    int no;
+    int nomorhero;
     lihatHero();
 
     cout<<"Pilih nomor hero yang diubah : ";
-    cin>>no;
-    no--;
+    cin>>nomorhero;
+    nomorhero--;
 
-    cout<<"Nama baru : "; cin>>hero[no].nama;
-    cout<<"Role baru : "; cin>>hero[no].role;
-    cout<<"Kesulitan baru : "; cin>>hero[no].kesulitan;
+    cout<<"Nama baru : "; cin>>hero[nomorhero].nama;
+    cout<<"Role baru : "; cin>>hero[nomorhero].role;
+    cout<<"Kesulitan baru : "; cin>>hero[nomorhero].kesulitan;
 
     return 0;
 }
@@ -106,7 +106,7 @@ int main(){
         return 0;
     }
 
-    int pilih;
+    int pilihanmenu;
 
     do{
         cout<<endl<<"=== MENU HERO MOBILE LEGENDS ==="<<endl;
@@ -117,9 +117,9 @@ int main(){
         cout<<"5. Keluar"<<endl;
 
         cout<<"Pilih : ";
-        cin>>pilih;
+        cin>>pilihanmenu;
 
-        switch(pilih){
+        switch(pilihanmenu){
             case 1: tambahHero(); break;
             case 2: lihatHero(); break;
             case 3: ubahHero(); break;
@@ -127,7 +127,7 @@ int main(){
             case 5: cout<<"Program selesai"<<endl; break;
         }
 
-    }while(pilih != 5);
+    }while(pilihanmenu != 5);
 
     return 0;
 }
